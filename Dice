@@ -1,0 +1,25 @@
+
+public class Dice {
+  private int sRollcount = 0;
+  private int nDiceNumber = 1;
+public void DiceCount(int y){
+  nDiceNumber = y;
+	
+}
+  public Dice() {
+	  sRollcount = 0;
+	  nDiceNumber =1;
+  }
+  public int RollDice(){
+	  int random;
+	  random = 1 + (int) (Math.random()*6)* nDiceNumber;
+	  sRollcount = sRollcount + nDiceNumber;
+	  return random;
+  }
+  public int Rollcount(){
+	  return sRollcount;
+  }
+  public String RollCountMsg(){
+	  return "Roll Dices at this moment:" + sRollcount;
+  }
+}
