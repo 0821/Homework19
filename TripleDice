@@ -1,0 +1,17 @@
+
+  public class TripleDice extends Dice {
+
+		public void TrippleDice(){
+			super.DiceCount(3);
+		}
+
+		public String RollCountMsg()
+		  {
+			String msg;
+			msg = "Calling my super to get ";
+			msg = msg + super.RollCountMsg();
+		  	return msg ;
+		  }
+
+	}
+
